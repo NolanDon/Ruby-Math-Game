@@ -4,6 +4,9 @@ require './players.rb'
 class MathGame
 
   def initialize
+    sleep(1)
+    puts "--------- WELCOME TO THE MATH GAME -----------"
+    sleep(1)
     puts "---- Player 1: Please enter your username ----"
     @player1 = Players.new($stdin.gets.chomp)
     # sleep(0.5)
@@ -24,9 +27,9 @@ class MathGame
   
     start_game = $stdin.gets.chomp
     if start_game == "enter" 
-      # sleep(0.7)
-      # puts "3.."
-      # sleep(0.7)
+      sleep(0.7)
+      puts "3.."
+      sleep(0.7)
       puts "2.."
       sleep(0.7)
       puts "1.."
